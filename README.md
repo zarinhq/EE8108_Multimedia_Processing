@@ -1,4 +1,4 @@
-# EE8108_Multimedia_Processing
+# EE8108 Multimedia Processing
 
 ## Introduction
 
@@ -14,7 +14,7 @@ Human Stress management has become an important factor in the present days as it
 
 ## Getting Started
 ### Downloading Dataset
-In this project, two datasets of MIT-BIH is used. One of them is **Arrythmia** dataset and another is **ST Change** dataset. These datasets can be downloaded from the following link,
+In this project, two datasets of MIT-BIH is used. One of them is **Arrythmia** dataset and another is **ST Change** dataset. These datasets can be downloaded from the following https://physionet.org Database,
 - [Arrythmia dataset](https://physionet.org/static/published-projects/mitdb/mit-bih-arrhythmia-database-1.0.0.zip)
 - [ST Change Dataset](https://physionet.org/static/published-projects/stdb/mit-bih-st-change-database-1.0.0.zip)
 
@@ -25,11 +25,11 @@ The datasets were preprocessed using **Low pass** filter to reduce the noise fro
 
 However, by running the [**Preprocessing_ECG_Data.ipynb**](https://github.com/zarinhq/EE8108_Multimedia_Processing/blob/main/Preprocessing_ECG_Data_.ipynb) notebook, the datasets can be downloaded and preprocessed. So, there will be no need to download the dataset separately.
 
-**Note:** Data preprocessing is a time-consuming process and requires high amount of RAM usage, hence preprocessed datasets are also uploaded in this [**Download link**](https://drive.google.com/file/d/1BMWkYjPMo_hcPK3WQ9_DyJwxGMVyafzC/view?usp=sharing). So you can just download the preprocessed datasets and move to **Model Train** step.
+**Note:** Data preprocessing is a time-consuming process and requires high amount of RAM usage, hence preprocessed datasets are also uploaded in this [**Download link**](https://drive.google.com/file/d/1BMWkYjPMo_hcPK3WQ9_DyJwxGMVyafzC/view?usp=sharing). So you can just download the zipped preprocessed datasets, extract it, and move to **Model Train** step.
 
 ### Model Train
-To train the model, the **data_ecg** folder need to be uploaded in the working directory. **data_ecg** folder can be get after preprocessing the data, or directly downloading the folder from the above link.
+To train the model, the **data_ecg** folder must in the working directory. **data_ecg** folder and the datasets inside it are generated as part of the preprocessing code, or you can directly download the folder from the above link.
 
-Later, [**Version_1_Stress_classification_CNN.ipynb**](https://github.com/zarinhq/EE8108_Multimedia_Processing/blob/main/Version_1_Stress_classification_CNN.ipynb) and [**Version_2_Stress_classification_CNN.ipynb**](https://github.com/zarinhq/EE8108_Multimedia_Processing/blob/main/Version_2_Stress_classification_CNN.ipynb) need to be executed to train and evaluate the models. 
+I have created two CNN models with different architecture: [**Version_1_Stress_classification_CNN.ipynb**](https://github.com/zarinhq/EE8108_Multimedia_Processing/blob/main/Version_1_Stress_classification_CNN.ipynb) and [**Version_2_Stress_classification_CNN.ipynb**](https://github.com/zarinhq/EE8108_Multimedia_Processing/blob/main/Version_2_Stress_classification_CNN.ipynb). Execute them separately to train and evaluate the models.
 
 The trained models are also uploaded in the repository as [**CNN_version_1.h5**](https://github.com/zarinhq/EE8108_Multimedia_Processing/blob/main/CNN_version_1.h5) and [**CNN_version_2.h5**](https://github.com/zarinhq/EE8108_Multimedia_Processing/blob/main/CNN_version_2.h5)
